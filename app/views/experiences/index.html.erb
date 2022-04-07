@@ -27,20 +27,24 @@
       </div>
     </div>
   </div>
-    <div id='experience' class='pt-3'>
-    <h2>Journey</h2>
-      <% @experiences.each do |experience| %>
-        <div class="card-product my-3">
-          <img src=" <%= experience.logo%> " alt="">
-
-          <div class="card-product-infos">
-            <h2><%= experience.role %> - <%= experience.company_name %>  ( <%= experience.start %> - <%= experience.end %> )</h2>
-            <p class='pt-3'><%= experience.description %></p>
-
+  <div id='experience' class='pt-3 '>
+    <% @experiences.each do |experience| %>
+      <div class='container-cards'>
+        <div class='card'>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <div class='content'>
+              <h2><%= experience.company_name %></h2>
+              <h3><%= experience.role %> |  (<%= experience.start.strftime("%b/%Y") %> - <%= experience.end.strftime("%b/%Y") %>)</h3>
+              <p><%= experience.description %></p>
+              <img src=" <%= experience.logo%> " alt="">
           </div>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
+  </div>
   <div class='links pt-5'>
     <a href="https://github.com/Luizfcalvarenga" target="_blank">
       <i class="fab fa-github"></i>
