@@ -1,0 +1,52 @@
+<div class='container pt-5'>
+  <h1 id='title'>Luiz Fernando C A, <br>
+      Sofware Engineer.
+  </h1>
+  <p id='title_p'>"Even the very wise cannot see all ends."</p>
+  <%= link_to "New Experience",  new_experience_path %>
+  <div id='about pt-3'>
+    <div class='about-grid'>
+      <%= image_tag "perfil.jpeg", class: 'luiz' %>
+      <div>
+        <h3>About</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum nibh lorem.
+          <br> Nullam vel ligula hendrerit, tincidunt est non, tristique velit. Vivamus tortor risus,
+          <br> laoreet vitae luctus id, vestibulum a magna. Maecenas maximus eros purus. Aenean
+          <br> vitae efficitur ante. Vivamus suscipit elit eu pellentesque rutrum.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum nibh lorem.
+          <br> Nullam vel ligula hendrerit, tincidunt est non, tristique velit. Vivamus tortor risus,
+          <br> laoreet vitae luctus id, vestibulum a magna. Maecenas maximus eros purus. Aenean
+          <br> vitae efficitur ante. Vivamus suscipit elit eu pellentesque rutrum.
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum nibh lorem.
+          <br> Nullam vel ligula hendrerit, tincidunt est non, tristique velit. Vivamus tortor risus,
+          <br> laoreet vitae luctus id, vestibulum a magna. Maecenas maximus eros purus. Aenean
+          <br> vitae efficitur ante. Vivamus suscipit elit eu pellentesque rutrum.
+        </p>
+      </div>
+    </div>
+  </div>
+    <div id='experience' class='pt-3'>
+    <h2>Journey</h2>
+      <% @experiences.each do |experience| %>
+        <div class="card-product my-3">
+          <img src=" <%= experience.logo%> " alt="">
+
+          <div class="card-product-infos">
+            <h2><%= experience.role %> - <%= experience.company_name %>  ( <%= experience.start %> - <%= experience.end %> )</h2>
+            <p class='pt-3'><%= experience.description %></p>
+
+          </div>
+        </div>
+      <% end %>
+    </div>
+  <div class='links pt-5'>
+    <a href="https://github.com/Luizfcalvarenga" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/luiz-fernando-chaves-alvarenga-6a4001121" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</div>

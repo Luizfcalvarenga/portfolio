@@ -1,0 +1,11 @@
+<div class='container pt-5'>
+  <%= simple_form_for(@experience) do |f| %>
+    <%= f.input :logo %>
+    <%= f.input :role %>
+    <%= f.input :company_name %>
+    <%= f.input :description %>
+    <%= f.input :start,  { :discard_day => true} %>
+    <%= f.input :end,  { :discard_day => true} %>
+    <%= f.submit "Create", class: "btn btn-outline-primary animal p-0" %>
+  <% end %>
+</div>
