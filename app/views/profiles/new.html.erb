@@ -1,0 +1,9 @@
+<div class='container pt-5'>
+  <%= simple_form_for(@profile) do |f| %>
+    <%= f.input :logo %>
+    <%= f.input :description %>
+    <%= f.input :start %>
+    <%= f.input :end %>
+    <%= f.submit "Create", class: "btn btn-outline-primary animal p-0" %>
+  <% end %>
+</div>

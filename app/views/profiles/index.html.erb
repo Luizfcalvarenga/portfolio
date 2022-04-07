@@ -3,6 +3,7 @@
       Sofware Engineer.
   </h1>
   <p id='title_p'>"Even the very wise cannot see all ends."</p>
+  <%= link_to "New Experience",  new_profile_path %>
   <div id='about'>
     <div class='about-grid'>
       <%= image_tag "perfil.jpeg", class: 'luiz' %>
@@ -27,13 +28,17 @@
     </div>
   </div>
    <div id='experience' class='pt-5'>
-     <div class="card-product">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/skateboard.jpg" />
-        <div class="card-product-infos">
-          <h2>Product name</h2>
-          <p>Product description with <strong>relevant info</strong> only.</p>
+    <% @profiles.each do |profile| %>
+      <div class="card-product">
+          <img src=" <%= profile.logo%> " alt="">
+
+          <div class="card-product-infos">
+            <h5><%= profile.description %></h5>
+            <p><%= profile.start %></p>
+            <p><%= profile.end %></p>
+          </div>
         </div>
-      </div>
+      <% end %>
   </div>
   <div class='pt-5'>
     <a href="https://github.com/Luizfcalvarenga" target="_blank">
