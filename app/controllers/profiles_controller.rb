@@ -1,6 +1,6 @@
 class ProfilesController < ApplicationController
   def index
-    @profiles = Profile.all
+    @profiles = Profile.all.order("updated_at DESC")
   end
 
   # def show
@@ -26,7 +26,7 @@ class ProfilesController < ApplicationController
     @profile = Profile.find(params[:id])
 
     @profile.destroy
-   
+
 
     redirect_to root_path
   end
