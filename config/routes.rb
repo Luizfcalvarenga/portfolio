@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "profiles#index"
+
+  resources :profiles, only: [ :index, :create, :new, :destroy ]
 end
