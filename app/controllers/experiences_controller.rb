@@ -3,11 +3,6 @@ class ExperiencesController < ApplicationController
     @experiences = Experience.all.order("updated_at DESC")
   end
 
-  # def show
-  #   @experiences = Experience.find(params[:id])
-  # end
-
-
   def new
     @experience = Experience.new
   end
@@ -22,12 +17,8 @@ class ExperiencesController < ApplicationController
   end
 
   def destroy
-
     @experience = Experience.find(params[:id])
-
     @experience.destroy
-
-
     redirect_to root_path
   end
 
