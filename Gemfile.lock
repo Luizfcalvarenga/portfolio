@@ -70,7 +70,7 @@ GEM
       public_suffix (>= 2.0.2, < 5.0)
     autoprefixer-rails (10.2.5.0)
       execjs (< 2.8.0)
-    bcrypt (3.1.16)
+    bcrypt (3.1.17)
     bindex (0.8.1)
     bootsnap (1.11.1)
       msgpack (~> 1.2)
@@ -100,8 +100,8 @@ GEM
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.15.5)
-    font-awesome-sass (6.0.0)
-      sassc (>= 2.0)
+    font-awesome-sass (6.1.1)
+      sassc (~> 2.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -129,7 +129,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     minitest (5.15.0)
-    msgpack (1.4.5)
+    msgpack (1.5.1)
     net-imap (0.2.3)
       digest
       net-protocol
@@ -269,7 +269,7 @@ DEPENDENCIES
   webdrivers
 
 RUBY VERSION
-   ruby 3.0.3p157
+   ruby 3.1.1p18
 
 BUNDLED WITH
-   2.3.10
+   2.3.11
