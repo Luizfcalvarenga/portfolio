@@ -3,15 +3,11 @@
 .navbar-midia {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   align-items: center;
   padding: 0px;
   position: relative;
-  width: 1440px;
   height: 56px;
-  /* Theme/Light */
   background: #F8F9FA;
-  /* Small Shadow */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
 }
 
@@ -24,9 +20,7 @@
   position: static;
   left: 12px;
   top: 8px;
-  /* HitBox */
   background: rgba(255, 255, 255, 1e-06);
-  /* Inside auto layout */
   flex: none;
   order: 1;
   flex-grow: 1;
@@ -46,7 +40,6 @@
   left: 72.22px;
   top: 0px;
   background: #F8F9FA;
-  /* Inside auto layout */
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -125,9 +118,9 @@
 }
 
 .list-links {
-  padding-left: 50px;
+  padding-left: 0;
+}
+.sign-btn {
+  display: flex;
 }
 
-.session {
-  padding-left: 400px;
-}
