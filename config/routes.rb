@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "experiences#index"
 
-  resources :experiences, only: [ :index, :create, :new, :destroy ]
+  resources :experiences, only: [ :index, :create, :new, :destroy, :show ]
 end

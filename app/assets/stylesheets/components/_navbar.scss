@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,200&display=swap');
+
+.navbar-midia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: relative;
+  width: 1440px;
+  height: 56px;
+  /* Theme/Light */
+  background: #F8F9FA;
+  /* Small Shadow */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+}
+
+.navbar-midia .navbar-collapse {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  position: static;
+  left: 12px;
+  top: 8px;
+  /* HitBox */
+  background: rgba(255, 255, 255, 1e-06);
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 1;
+  margin: 0px 0px;
+
+}
+
+.img-navbar-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: static;
+  width: 99.56px;
+  height: 56px;
+  left: 72.22px;
+  top: 0px;
+  background: #F8F9FA;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 0px;
+}
+
+.nav-signup {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 12px;
+  color: white;
+  position: static;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 0%;
+  background: #FD7E14;
+  border-radius: 4px;
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 8px;
+  border: 1px solid #FD7E14;
+}
+
+.nav-signup:hover {
+  background: transparent;
+  color: #FD7E14;
+  border: 1px solid #FD7E14;
+
+}
+
+
+.nav-signin {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 7px 13px;
+  position: static;
+  width: 66px;
+  height: 38px;
+  left: 13px;
+  top: 9px;
+  /* HitBox */
+  background: rgba(255, 255, 255, 1e-06);
+  /* Orange/500 */
+  border: 1px solid #FD7E14;
+  box-sizing: border-box;
+  border-radius: 4px;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 8px;
+  color: #FD7E14;
+}
+
+
+.nav-signin:hover {
+  background: #FD7E14;
+  color: white;
+}
+
+.nav-links {
+  color: rgb(146,146,147);
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.nav-links:hover {
+  color: black;
+}
+
+.list-links {
+  padding-left: 50px;
+}
+
+.session {
+  padding-left: 400px;
+}

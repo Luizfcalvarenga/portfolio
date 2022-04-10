@@ -3,6 +3,10 @@ class ExperiencesController < ApplicationController
     @experiences = Experience.all.order("updated_at DESC")
   end
 
+  def show
+    @experience = Experience.find(params[:id])
+  end
+
   def new
     @experience = Experience.new
   end
