@@ -19,3 +19,139 @@
     <%# end %>
   </div>
 </div>
+<div class='banner'>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <%= image_tag "midia-banner.png", class: 'd-block w-100' %>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>My Caption Title (1ª Image)</h5>
+                <p>The whole caption will only show up if the screen is at least medium size.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <%= image_tag "midia-banner.png", class: 'd-block w-100' %>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>My Caption Title (2ª Image)</h5>
+                <p>The whole caption will only show up if the screen is at least medium size.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <%= image_tag "midia-banner.png", class: 'd-block w-100' %>
+            <div class="carousel-caption d-none d-md-block">
+                <h5>My Caption Title (3ª Image)</h5>
+                <p>The whole caption will only show up if the screen is at least medium size.</p>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+</div>
+<div class='container pt-5'>
+  <div class='container-grid'>
+    <%= image_tag "midia-locations.png", class: 'midia-location-img' %>
+    <div>
+      <div class='location-text pb-4'>
+        <h2>Nossa Presença</h2>
+        <p>Estamos presentes 24h por dia, 7 dias por semana em pontos de grande fluxo nas principais regiões. Com a mídia correta sua empresa irá ter bons resultado! </p>
+      </div>
+      <div class='pt-5 d-flex justify-content-end'>
+        <%= link_to "Call to action", "#", class: "action-location-btn w-25 mt-3 pe-3" %>
+        <%= link_to "Call to action", "#", class: "action-btn w-25 mt-3" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='container pt-5'>
+  <div class='container-grid anuncios'>
+    <%= image_tag "pq-anunciar.png", class: 'anuncio-img' %>
+    <div>
+      <h2>Por que anunciar em mídia exterior?</h2>
+      <p>A mídia exterior, também conhecida como mídia externa e out-of-home exerce grande impacto no público, e é uma ótima maneira de alcançar as pessoas onde elas passam uma boa parte do seu tempo, trabalham e se divertem. É a mídia que está em toda parte e, quando usada com criatividade, ela se torna inesquecível. Além disso, a mensagem concisa e breve facilita a memorização.</p>
+      <div class='pt-3'>
+        <%= link_to "Call to action", "#", class: "action-btn w-25 mt-3" %>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='container pt-5 pb-5'>
+  <div class='container-grid'>
+    <div class='who-we-are-text'>
+      <h2>Quem somos</h2>
+      <p class='pb-4'>Trazemos em nossa trajetória mais de 14 anos de experiência em mídia exterior. Nascemos com a missão de ampliar e diversificar, dia a dia, o nosso portfólio de produtos, estando alinhados ao que há de mais inovador quanto às mídias mais requisitadas no mercado publicitário.</p>
+      <div class='pt-4 d-flex justify-content-end'>
+        <%= link_to "Call to action", "#", class: "action-btn w-25 mt-3" %>
+      </div>
+    </div>
+    <%= image_tag "quem-somos.png", class: 'anuncio-img' %>
+  </div>
+</div>
+<div class='container text-center pt-5 associate'>
+  <h2 class='pb-3'>Seja um associado</h2>
+  <p class='pb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque venenatis tincidunt eleifend id. Semper amet tortor at vel mattis ut. Lacus, non malesuada nullam sagittis, volutpat quam pellentesque leo, facilisi. Sed erat iaculis luctus ornare in eget. Enim nec in est, vestibulum habitant tempus leo. Ut amet est morbi maecenas consectetur eu at tincidunt. Sodales maecenas pretium vitae ante tellus egestas convallis et. </p>
+  <%= link_to "Call to action", "#", class: "associate-btn w-25 mt-3" %>
+</div>
+
+<div class='footer mt-5'>
+  <div class='container'>
+    <div class='footer-grid'>
+      <div class='pe-5'>
+        <%= image_tag "midia-footer.png" %>
+        <div class='social-links d-flex justify-content-around'>
+          <%= link_to "#" do %>
+            <i class="fa-brands fa-whatsapp-square"></i>
+          <% end %>
+          <%= link_to "#" do %>
+            <i class="fa-brands fa-instagram-square"></i>
+          <% end %>
+          <%= link_to "#" do %>
+            <i class="fa-brands fa-facebook-square"></i>
+          <% end %>
+          <%= link_to "#" do %>
+            <i class="fa-brands fa-linkedin"></i>
+          <% end %>
+        </div>
+      </div>
+      <div class='locations pt-4'>
+        <p>Localidades</p>
+        <p>Av. Guararapes, nº 8, Sala 1 Centro, Recife - PE</p>
+        <p>Av. Guararapes, nº 8, Sala 1 Centro, Recife - PE</p>
+      </div>
+      <div class='services pt-4 ps-4'>
+        <p>Serviços</p>
+        <%= link_to "Título página 1", "#", class: 'pb-2' %><br>
+        <%= link_to "Título página 2", "#" %><br>
+        <%= link_to "Título página 3", "#" %><br>
+        <%= link_to "Título página 4", "#" %>
+      </div>
+      <div class='clients pt-4 ps-4'>
+        <p>Clientes</p>
+        <%= link_to "Título página 1", "#" %><br>
+        <%= link_to "Título página 2", "#" %><br>
+        <%= link_to "Título página 3", "#" %><br>
+        <%= link_to "Título página 4", "#" %>
+      </div>
+      <div class='associates-footer pt-4 ps-4'>
+        <p>Associados</p>
+        <%= link_to "Título página 1", "#" %><br>
+        <%= link_to "Título página 2", "#" %><br>
+        <%= link_to "Título página 3", "#" %><br>
+        <%= link_to "Título página 4", "#" %>
+      </div>
+    </div>
+  </div>
+  <hr class='footer-hr text-center'>
+  <p class='footer-rights'>© 2022 Mídia de Rua. All rights reserved.</p>
+</div>
