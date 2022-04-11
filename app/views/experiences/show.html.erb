@@ -4,7 +4,7 @@
       <%#= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
     <%# else %>
       <%= image_tag "midia-de-rua-logo.png", class: 'img-navbar-logo' %>
-      <div class='list-links justify-content-start'>
+      <div class='list-links'>
         <%= link_to "Home", "#", class: 'nav-links' %>
         <%= link_to "Mídias", "#", class: 'nav-links'  %>
         <%= link_to "Atuação", "#", class: 'nav-links'  %>
@@ -12,8 +12,8 @@
         <%= link_to "Fale Conosco", "#", class: 'nav-links'  %>
       </div>
       <div class='sign-btn'>
-        <%= link_to "Cadastre-se", "#", class: "nav-signup" %>
-        <%= link_to "Login", "#", class: "nav-signin" %>
+        <%= link_to "Cadastre-se", "#", class: "nav-sign-up" %>
+        <%= link_to "Login", "#", class: "nav-sign-in" %>
       </div>
         <%#= link_to "Login", new_user_session_path, class: "nav-link" %>
     <%# end %>
@@ -164,5 +164,8 @@
     </div>
   </div>
   <hr class='footer-hr text-center'>
-  <p class='footer-rights'>© 2022 Mídia de Rua. All rights reserved.</p>
+  <div class='d-flex justify-content-around pb-3'>
+    <p class='footer-rights'>© 2022 Mídia de Rua. All rights reserved.</p>
+    <p class='footer-novamente'>Desenvolvido com &hearts; por <%= link_to "Novamente", "https://novamente.cc/", target: "_blank" %></p>
+  </div>
 </div>
