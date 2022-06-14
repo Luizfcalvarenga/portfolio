@@ -49,7 +49,11 @@
             <span></span>
             <div class='content'>
                 <h2><%= experience.company_name %></h2>
-                <h3><%= experience.role %> <br>  (<%= experience.start.strftime("%b/%Y") %> - <%= experience.end.strftime("%b/%Y") %>)</h3>
+                <% if experience.end.present? %>
+                  <h3><%= experience.role %> <br>  (<%= experience.start.strftime("%b/%Y") %> - <%= experience.end.strftime("%b/%Y") %>)</h3>
+                <% else %>
+                  <h3><%= experience.role %> <br>  (<%= experience.start.strftime("%b/%Y") %> - present)</h3>
+                <% end %>
                 <p><%= experience.description %></p>
                 <img src=" <%= experience.logo %> " alt="">
             </div>
@@ -72,12 +76,11 @@
                 <h2>miaudote</h2>
                 <h3>Projeto desenvolvido no bootccamp do Le Wagon.</h3>
                 <p>plataforma de adoção de animais abandonados.</p>
-
             </div>
           </div>
         </div>
       </a>
-      <a href="https://oneteach2.herokuapp.com/" target="_blank" class="col">
+      <a href="https://www.1teach2.one/" target="_blank" class="col">
         <div class='container-cards'>
           <div class='card card-project'>
             <span></span>
@@ -88,7 +91,6 @@
                 <h2>1teach2</h2>
                 <h3>Projeto final desenvolvido no Le Wagon.</h3>
                 <p>Plataforma de troca de conhecimentos.</p>
-
             </div>
           </div>
         </div>
@@ -104,7 +106,6 @@
                 <h2>mídiaderua</h2>
                 <h3>Projeto desenvolvido pela Novamente.</h3>
                 <p>Plataforma ecommerce de mídias de rua.</p>
-
             </div>
           </div>
         </div>
