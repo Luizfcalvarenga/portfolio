@@ -1,56 +1,114 @@
-<div class='container pt-5'>
-  <h1 id='title'>Luiz Fernando C A, <br>
+<div class="banner">
+  <h1 id="title" class='title'>Luiz Fernando C A, <br>
       Sofware Engineer.
   </h1>
-  <p id='title_p'>"Even the very wise cannot see all ends."</p>
-  <%= link_to "New Experience",  new_experience_path %>
-  <div id='about pt-3'>
-    <div class='about-grid'>
-      <%= image_tag "perfil.jpeg", class: 'luiz' %>
-      <div>
-        <h3>About</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum nibh lorem.
-          <br> Nullam vel ligula hendrerit, tincidunt est non, tristique velit. Vivamus tortor risus,
-          <br> laoreet vitae luctus id, vestibulum a magna. Maecenas maximus eros purus. Aenean
-          <br> vitae efficitur ante. Vivamus suscipit elit eu pellentesque rutrum.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum nibh lorem.
-          <br> Nullam vel ligula hendrerit, tincidunt est non, tristique velit. Vivamus tortor risus,
-          <br> laoreet vitae luctus id, vestibulum a magna. Maecenas maximus eros purus. Aenean
-          <br> vitae efficitur ante. Vivamus suscipit elit eu pellentesque rutrum.
-        </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris interdum nibh lorem.
-          <br> Nullam vel ligula hendrerit, tincidunt est non, tristique velit. Vivamus tortor risus,
-          <br> laoreet vitae luctus id, vestibulum a magna. Maecenas maximus eros purus. Aenean
-          <br> vitae efficitur ante. Vivamus suscipit elit eu pellentesque rutrum.
-        </p>
-      </div>
-    </div>
-  </div>
-  <div id='experience' class='pt-3 '>
-    <% @experiences.each do |experience| %>
-      <div class='container-cards'>
-        <div class='card'>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <div class='content'>
-              <h2><%= experience.company_name %></h2>
-              <h3><%= experience.role %> <br>  (<%= experience.start.strftime("%b/%Y") %> - <%= experience.end.strftime("%b/%Y") %>)</h3>
-              <p><%= experience.description %></p>
-              <img src=" <%= experience.logo%> " alt="">
-          </div>
-        </div>
-      </div>
-    <% end %>
-  </div>
-  <div class='links pt-5'>
+  <p id="title_p" class='title_p'>"Even the very wise cannot see all ends."</p>
+  <div class='links'>
     <a href="https://github.com/Luizfcalvarenga" target="_blank">
       <i class="fab fa-github"></i>
     </a>
     <a href="https://www.linkedin.com/in/luiz-fernando-chaves-alvarenga-6a4001121" target="_blank">
       <i class="fab fa-linkedin"></i>
     </a>
+    <p class="email">
+      <i class="fa-solid fa-at"></i>luizfca@gmail.com
+    </p>
+  </div>
+</div>
+<div class='container pt-5'>
+  <%= link_to "New Experience",  new_experience_path, class: "d-none" %>
+  <div id='about pt-3'>
+    <div class='row'>
+      <h1 class="title mb-3">About:</h1>
+      <div class="col-9">
+        <p class="title_p">Hello, my name is Luiz Fernando, I'm a former civil engineer, now dedicating my life
+          to technology and coding, as it was always my passion. My journey began in
+          november of 2021, whe I decided to apply fo Le Wagon bootcamp, my batch was the #830,
+          which I tryed to take the most of the experience living in São Paulo
+          for almost 3 months dedicated to web-development. Some things I learned that was, ruby on rails, javascript, CSS, HTML and SQL, now it's time to put that knowlagde to work.
+        </p>
+        <p class="title_p">Here I will try to share with you a little of my work as I walk this journey, so doesn't
+          exitate to visit my projects links, some may seem quite simple, but this road is only on the beggining,
+          so let's biuld something great together. You can contact me in my Linkedin or GitHub, or send me an email.
+        </p>
+      </div>
+      <div class="col-3">
+        <%= image_tag "perfil.jpeg", class: 'luiz' %>
+      </div>
+    </div>
+  </div>
+  <div id='experience' class='my-3'>
+    <h1 class="section mb-5">Experience:</h1>
+    <div class="row">
+      <% @experiences.each do |experience| %>
+        <div class='container-cards col-4'>
+          <div class='card'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class='content'>
+                <h2><%= experience.company_name %></h2>
+                <h3><%= experience.role %> <br>  (<%= experience.start.strftime("%b/%Y") %> - <%= experience.end.strftime("%b/%Y") %>)</h3>
+                <p><%= experience.description %></p>
+                <img src=" <%= experience.logo %> " alt="">
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <div class="projects mt-5 pb-4">
+    <h1 class="title mb-5">Projects:</h1>
+    <div class="row">
+      <a href="https://miaudota-lw.herokuapp.com/" target="_blank" class="col">
+        <div class='container-cards'>
+          <div class='card card-project'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class='content'>
+                <h2>miaudote</h2>
+                <h3>Projeto desenvolvido no bootccamp do Le Wagon.</h3>
+                <p>plataforma de adoção de animais abandonados.</p>
+
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="https://oneteach2.herokuapp.com/" target="_blank" class="col">
+        <div class='container-cards'>
+          <div class='card card-project'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class='content'>
+                <h2>1teach2</h2>
+                <h3>Projeto final desenvolvido no Le Wagon.</h3>
+                <p>Plataforma de troca de conhecimentos.</p>
+
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="" target="_blank" class="col">
+        <div class='container-cards'>
+          <div class='card card-project'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class='content'>
+                <h2>mídiaderua</h2>
+                <h3>Projeto desenvolvido pela Novamente.</h3>
+                <p>Plataforma ecommerce de mídias de rua.</p>
+
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
 </div>
