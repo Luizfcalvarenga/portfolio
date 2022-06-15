@@ -195,3 +195,11 @@
  .card-project:hover {
    color: rgb(9, 244, 28);
  }
+
+ @media (max-width: 450px) {
+
+  #about {
+    
+    width: 100%;
+  }
+}

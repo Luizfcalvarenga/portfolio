@@ -24,3 +24,12 @@
   left: 206px;
   bottom: 5px;
 }
+
+@media (max-width: 450px) {
+
+  .email {
+    position: absolute;
+    left: 155px;
+    bottom: 45px;
+  }
+}
