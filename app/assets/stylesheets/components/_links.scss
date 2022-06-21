@@ -5,7 +5,7 @@ a {
 .fa-github {
   color: rgb(9, 244, 28);
   font-size: 30px;
-  margin-left: 50px;
+  margin-left: 100px;
 }
 
 .fa-github:hover {
@@ -16,7 +16,7 @@ a {
   color: rgb(9, 244, 28);
   font-size: 30px;
   margin-left: 20px;
-  margin-top: 150px;
+  margin-top: 220px;
 
 }
 
@@ -29,3 +29,15 @@ a {
   font-size: 30px;
 }
 
+
+@media (max-width: 450px) {
+  .fa-github {
+
+    margin-left: 20px;
+
+  }
+
+  .links {
+    margin-top: 110px;
+  }
+}
