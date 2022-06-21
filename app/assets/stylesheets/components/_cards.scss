@@ -198,8 +198,34 @@
 
  @media (max-width: 450px) {
 
-  #about {
-    
-    width: 100%;
+  .about {
+    display: block;
+    width: 100% !important;
+    margin-right: 0 !important;
   }
+
+  .cards-ex {
+
+    display: block;
+    width: 100%;
+
+  }
+
+  .card {
+    margin-bottom: 15px;
+
+  }
+
+  .card-ex {
+    width: 45vh !important;
+  }
+  .card-project {
+    width: 100% !important;
+  }
+  .luiz {
+    margin-left: 60%;
+  }
+
+
+
 }

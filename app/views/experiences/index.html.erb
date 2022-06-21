@@ -1,8 +1,8 @@
 <div class="banner">
-  <h1 id="title" class='title'>Luiz Fernando C A, <br>
-      Sofware Engineer.
+  <h1 id="title" class='title'>Luiz Fernando <span class="surname">C A,</span>  <br>
+      Sofware <span class="eng">Engineer.</span>
   </h1>
-  <p id="title_p" class='title_p'>"You Must Trust Yourself. Trust Your Own Strength."</p>
+  <p id="title_p" class='title_p'>"You Must Trust Yourself.  <span class="quote">Trust Your Own Strength."</span></p>
   <div class='links'>
     <a href="https://github.com/Luizfcalvarenga" target="_blank">
       <i class="fab fa-github"></i>
@@ -11,38 +11,38 @@
       <i class="fab fa-linkedin"></i>
     </a>
     <p class="email">
-      <i class="fa-solid fa-at"></i>luizfca@gmail.com
+      <i class="fa-solid fa-at"></i>luizfca7@gmail.com
     </p>
   </div>
 </div>
 <div class='container pt-5'>
   <%= link_to "New Experience",  new_experience_path, class: "d-none" %>
   <div id='about pt-3'>
-    <div class='row'>
-      <h1 class="title mb-3">About:</h1>
-      <div class="col-9 col-sm-12">
-        <p class="title_p">Hello, my name is Luiz Fernando, I'm a former civil engineer, now dedicating my life
+    <div class='row about'>
+      <h1 class="title section mb-3">About</h1>
+      <div class="col-9">
+        <p class="title_p text-ab">Hello, my name is Luiz Fernando, I'm a former civil engineer, now dedicating my life
           to technology and coding, as it was always my passion. My journey began in
           november of 2021, whe I decided to apply fo Le Wagon bootcamp, my batch was the #830,
           which I tryed to take the most of the experience living in São Paulo
           for almost 3 months dedicated to web-development. Some things I learned that was, ruby on rails, javascript, CSS, HTML and SQL, now it's time to put that knowlagde to work.
         </p>
-        <p class="title_p">Here I will try to share with you a little of my work as I walk this journey, so doesn't
+        <p class="title_p text-ab">Here I will try to share with you a little of my work as I walk this journey, so doesn't
           exitate to visit my projects links, some may seem quite simple, but this road is only on the beggining,
           so let's biuld something great together. You can contact me in my Linkedin or GitHub, or send me an email.
         </p>
       </div>
-      <div class="col-3 col-sm-12">
+      <div class="col-3">
         <%= image_tag "perfil.jpeg", class: 'luiz' %>
       </div>
     </div>
   </div>
   <div id='experience' class='my-3'>
-    <h1 class="section mb-5">Experience:</h1>
-    <div class="row">
+    <h1 class="section mb-5">Experience</h1>
+    <div class="row cards-ex">
       <% @experiences.each do |experience| %>
         <div class='container-cards col-4'>
-          <div class='card'>
+          <div class='card card-ex'>
             <span></span>
             <span></span>
             <span></span>
@@ -63,9 +63,9 @@
     </div>
   </div>
   <div class="projects mt-5 pb-5">
-    <h1 class="title mb-5">Projects:</h1>
+    <h1 class="title section mb-5">Projects</h1>
     <div class="row">
-      <a href="" target="_blank" class="col">
+      <a href="" target="_blank" class="col-sm">
         <div class='container-cards'>
           <div class='card card-project'>
             <span></span>
@@ -80,7 +80,7 @@
           </div>
         </div>
       </a>
-      <a href="https://www.1teach2.one/" target="_blank" class="col">
+      <a href="https://www.1teach2.one/" target="_blank" class="col-sm">
         <div class='container-cards'>
           <div class='card card-project'>
             <span></span>
@@ -95,7 +95,7 @@
           </div>
         </div>
       </a>
-      <a href="https://miaudota-lw.herokuapp.com/" target="_blank" class="col">
+      <a href="https://miaudota-lw.herokuapp.com/" target="_blank" class="col-sm">
         <div class='container-cards'>
           <div class='card card-project'>
             <span></span>
